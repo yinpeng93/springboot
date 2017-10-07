@@ -1,0 +1,12 @@
+#开发环境
+server:
+  port: 8082
+my:
+  name: yp
+  age: 25
+#  配置文件中用到了${random},它可以用来生成不同类型的随机值。
+  number: ${random.int}
+  uuid: ${random.uuid}
+  max: ${random.int(10)}
+  value: ${random.value}
+  greeting: hi,I'm ${my.name}
